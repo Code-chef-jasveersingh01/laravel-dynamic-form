@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
+            $table->string('method')->nullable();
+            $table->string('action')->nullable();
             $table->json('structure');
             $table->timestamps();
         });

@@ -14,7 +14,7 @@ class Form extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'structure'];
+    protected $fillable = ['name', 'structure', 'method', 'action'];
 
     /**
      * The attributes that should be cast to native types.
